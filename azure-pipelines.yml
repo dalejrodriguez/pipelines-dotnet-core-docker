@@ -23,3 +23,6 @@ steps:
     repository: 'manasia / dale'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
+    - task: Bash@3
+      inputs:
+        filePath: 'test.sh'
